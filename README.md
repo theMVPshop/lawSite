@@ -18,11 +18,13 @@ Happy Clients
 
 540
 Great Rewards
-￼
+
+
 About Our Firm
 
 We understand that the state seems to have endless resources at its disposal. We strive to do everything possible to help you achieve a favorable result despite what may feel like insurmountable odds. Our criminal defense attorney is here to guide you through one of the most difficult situations of your life.
-￼
+
+
 Practice Areas
 We have experience in a range of criminal defense case types. We’re prepared to handle your case.
 
@@ -40,7 +42,8 @@ To succeed as a criminal defense attorney, one must be bold. One must be talente
    
 Mark Smith
 Criminal Defence
-￼
+
+
 Ryan Printz
 Dwi Lawyer
 
@@ -61,31 +64,40 @@ We understand what you are up against and are here to fight for you.
 Clients Feedback
 Our Austin defense lawyers understand what’s at stake for those accused of crimes, which is why we attend to every detail and deliver the one-on-one attention our clients need. Learn more about our legal services by reading reviews from past clients.
 
-￼
+
+
 “I feel that if it weren't for them I would have been heavily misguided and probably would not have made it through the system with the best possible outcome for me. 5 Stars for their service, generosity, and in making me feel like a top priority!”
 - Gene Martin
-￼
+
+
 “I would love to add my thanks and heart felt appreciation for the help that your law firm provided me. Before I met you guys my situation looked very bleak and quite honestly your dedication to my case really carried over this past year and the reward was not only one felony dismissal but two.”
 - Maya Jonson
-￼
+
+
 “Ended up going to trial for a DWI and got all 6 jurors to agree on a not guilty verdict. Highly recommended!! They will truly fight for you because they care for you.”
 - Mark Smith
-￼
+
+
 “I feel that if it weren't for them I would have been heavily misguided and probably would not have made it through the system with the best possible outcome for me. 5 Stars for their service, generosity, and in making me feel like a top priority!”
 - Gene Martin
-￼
+
+
 “I would love to add my thanks and heart felt appreciation for the help that your law firm provided me. Before I met you guys my situation looked very bleak and quite honestly your dedication to my case really carried over this past year and the reward was not only one felony dismissal but two.”
 - Maya Jonson
-￼
+
+
 “Ended up going to trial for a DWI and got all 6 jurors to agree on a not guilty verdict. Highly recommended!! They will truly fight for you because they care for you.”
 - Mark Smith
-￼
+
+
 “I feel that if it weren't for them I would have been heavily misguided and probably would not have made it through the system with the best possible outcome for me. 5 Stars for their service, generosity, and in making me feel like a top priority!”
 - Gene Martin
-￼
+
+
 “I would love to add my thanks and heart felt appreciation for the help that your law firm provided me. Before I met you guys my situation looked very bleak and quite honestly your dedication to my case really carried over this past year and the reward was not only one felony dismissal but two.”
 - Maya Jonson
-￼
+
+
 “Ended up going to trial for a DWI and got all 6 jurors to agree on a not guilty verdict. Highly recommended!! They will truly fight for you because they care for you.”
 - Mark Smith
 
@@ -97,13 +109,16 @@ The information on this website is for general information purposes only. Nothin
 
    
 Blog Posts
-￼
+
+
 Four ways to cheer yourself up on the Blue Monday!
 Jan 20, 2021  6 comments
-￼
+
+
 Old cameras can capture images better than nowdays camera!
 Jan 20, 2021  3 comments
-￼
+
+
 Four ways to cheer yourself up on the Blue Monday!
 Jan 20, 2021  5 comments
 Get In Touch
