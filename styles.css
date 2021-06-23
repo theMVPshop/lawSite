@@ -1,0 +1,21 @@
+.header {
+    background-size: cover;
+    max-height: 100%;
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(images/slider/slide-1.jpg);
+    background-repeat: no-repeat;
+    /* width: 100vw; */
+    /* height: 100vh; */
+    /* overflow-x:scroll */
+}
+.navbar {
+    display: flex;
+    flex-direction: row;
+    padding: 1% 15%;
+}
+.btn {
+    outline: none !important;
+    border-width: 0;
+  }
+.bi {
+    margin-bottom: 6px;
+}
