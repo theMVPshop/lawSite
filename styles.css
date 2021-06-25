@@ -12,10 +12,157 @@
     flex-direction: row;
     padding: 1% 15%;
 }
-.btn {
+.navbarButton {
     outline: none !important;
     border-width: 0;
   }
 .bi {
     margin-bottom: 6px;
+}
+.headerParagraph {
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 60px;
+}
+.headerParagraphTitle {
+    color: white;
+    padding-bottom: 20px;
+    font-size: 3.5em;
+}
+.headerParagraphContent {
+    color: white;
+    margin: auto 37%;
+    text-align: center;
+    padding-bottom: 30px;
+}
+.freeConsultation {
+    margin-bottom: 30px;
+}
+.statBox {
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(249,249,249);
+}
+.statBoximg {
+    position: relative;
+    margin-top: -60px;
+    border-radius: 5px;
+}
+.about {
+    display:flex;
+    align-items: center;
+    background-color: rgb(249,249,249);
+}
+.aboutImage {
+    margin: auto 10%;
+}
+.aboutContent {
+    margin: auto 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+.aboutTitle {
+    font-size: 2.5em;
+}
+hr {
+    width: 7%;
+    background-color: rgb(221,178,125);
+    margin: 4% 0px;
+}
+.aboutParagraph {
+    color: darkgray;
+    margin-right: 45%;
+}
+.aboutSignature {
+    max-width: 10%;
+}
+.practice {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5%;
+}
+.practiceTitle {
+    font-size: 2.5em;
+}
+.practiceParagraphContent {
+    color: darkgrey;
+    margin: auto 33%;
+    margin-bottom: -2%;
+    text-align: center;
+}
+.practiceBreak {
+    width: 3%;
+}
+.practiceServices {
+    margin-right: 7%;
+    padding-bottom: 100px;
+
+}
+.expert {
+    background-color: rgb(249,249,249);
+}
+.expertContent {
+    padding-top: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+.expertParagraphContent{
+    text-align: center;
+    margin: auto 33%;
+    margin-bottom: -2%;
+    color: darkgrey;
+}
+.expertTeam{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.expertName {
+    padding-top: 10px;
+}
+.expertMark {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.expertRyanPrintz {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.hire {
+    display: flex;
+    flex-direction: row;
+}
+.hireContent {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.hireImage {
+    background-size: cover;
+    background-image: url(/images/background/bg-1.jpg);
+    width: 40%;
+    height: 600px;
+    
+}
+.hireAreas {
+    display: flex;
+    width: 50%;
+    height: 50%;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.hireParagraphs {
+    color: darkgrey;
+    text-align: left;
+    /* padding-right: 70%; */
+    /* margin-left: 20%; */
+    
 }
