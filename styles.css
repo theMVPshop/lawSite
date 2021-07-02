@@ -1,8 +1,14 @@
+body {
+    overflow-x: hidden;
+}
+
 .header {
     background-size: cover;
     max-height: 100%;
     background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(images/slider/slide-1.jpg);
     background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
     /* width: 100vw; */
     /* height: 100vh; */
     /* overflow-x:scroll */
@@ -71,7 +77,7 @@
 hr {
     width: 7%;
     background-color: rgb(221,178,125);
-    margin: 4% 0px;
+    margin: 4% 0%;
 }
 .aboutParagraph {
     color: darkgray;
@@ -140,29 +146,141 @@ hr {
     display: flex;
     flex-direction: row;
 }
+.hireTitle {
+    padding-bottom: 20px;
+}
 .hireContent {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    margin-top: 80px;
 }
 .hireImage {
-    background-size: cover;
-    background-image: url(/images/background/bg-1.jpg);
-    width: 40%;
-    height: 600px;
-    
+    margin-left: -180px;
+    width: 60%;
+    height: auto;
 }
 .hireAreas {
     display: flex;
-    width: 50%;
-    height: 50%;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: left;
 }
 .hireParagraphs {
     color: darkgrey;
     text-align: left;
-    /* padding-right: 70%; */
-    /* margin-left: 20%; */
-    
+}
+.clients {
+    margin-top: 30px;
+    display: flex;
+    background-color: rgb(249,249,249);
+    align-items: center;
+    flex-direction: column;
+}
+.clientTitle {
+    padding-top: 70px;
+    text-align: center;
+}
+.clientParagraphContent {
+    text-align: center;
+    margin: auto 33%;
+    color: darkgrey;
+}
+.clientTestimonials {
+    display: flex;
+    flex-direction: row;
+}
+.clientOne {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 33%;
+}
+.clientTwo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 33%;
+}
+.clientThree {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 33%;
+}
+.clientTestimonialsParagraphs {
+    margin: 2% 25%;
+    color: darkgrey;
+    text-align: center;
+}
+.consultation {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: rgb(249,249,249);
+}
+.consultationContent {
+    display: flex;
+    flex-direction: row;
+}
+.consultationForm {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    width: 55vw;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.consultationImage {
+    display:flex;
+    width: 50%;
+    height: auto;
+    margin-right: 0;
+    margin-left: auto;
+}
+.sendRequest {
+    background-color: rgb(216,174,119);
+    border-color: rgb(216,174,119);
+    color: white;
+    padding: 12px 30px;
+}
+.form-control {
+    background-color: rgb(245,245,245);
+    border: none;
+}
+.additionalInfo {
+    padding-top: 100px;;
+    background-color: rgb(54,54,54);
+    color: rgb(189,189,189);
+}
+.additionalInfoContent{
+    padding-bottom: 80px;
+}
+.infoParagraph{
+    text-align: left;
+    padding-left: 10%;
+}
+.addressEmail {
+    color: darkgrey;
+}
+.bi-geo-alt-fill {
+    color: rgb(216,174,119);
+}
+.bi-telephone-fill{
+    color: rgb(216,174,119);
+}
+.blogContact {
+    color: white;
+    padding-bottom: 5%;
+}
+.bi-envelope {
+    color: rgb(216,174,119);
+}
+footer {
+    background-color: rgb(39,39,39);
+    color: rgb(129,129,129);
+    padding-top: 20px;
+    padding-bottom: 10px;
+    text-align: center;
 }

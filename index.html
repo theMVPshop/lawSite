@@ -10,7 +10,7 @@
 </head>
 <body>
     <main>
-        <div class="header">
+        <div class="header container-md">
             <nav class="navbar navbar-light bg-light header">
                 <div class="container-fluid">
                   <a class="navbar-brand" href="#">
@@ -88,31 +88,37 @@
             </div>
 
             <div class="hire">
-              <div class="hireImage">
-              </div>
+
+                <img class="hireImage" src="/images/background/bg-1.jpg">
+              <!-- </div> -->
 
               <div class="hireContent">
-                <h3 class="hireTitle">Why Hire Us ?</h3>
-                <p>Boldly Defending Your Best Interests</p>
-                <hr class="hireBreak">
-                <br><br>
-                <div class="hireAreas">
-                  <div>
+                <div class="hireAreas row">
+                  <div class="col-9">
+                    <h3 class="hireTitle">Why Hire Us ?</h3>
+                    <p>Boldly Defending Your Best Interests</p>
+                    <hr class="hireBreak">
+                    <br><br>
+                  </div>
+                  <div class="w-100 d-none d-md-block"></div>
+                <div class="col-6 col-sm-4">
                 <img src="/images/hireIcons/1MDIV6n.png">
                 <h5>Exclusive Areas</h5>
                 <p class="hireParagraphs">Focusing our practice on DWI defense and the representation of clients facing charges and investigations related to a range of criminal offenses throughout the Austin area, our attorneys are here for you.</p>
                 </div>
-                <div>
+                <div class="col-6 col-sm-4">
+                  <img src="/images/hireIcons/Dr31txG.png">
+                  <h5>Cases Results</h5>
+                  <p class="hireParagraphs">Our clients’ needs come first, and we are relentless in our defense of your constitutional rights.</p>
+                </div>
+                <div class="w-100 d-none d-md-block"></div>
+
+                <div class="col-6 col-sm-4">
                 <img src="/images/hireIcons/4KRFvAC.png">
                 <h5>Group Of Lawyers</h5>
                 <p class="hireParagraphs">We are not afraid to fight for our clients, delivering the bold and straightforward representation that leads to successes both in and out of court.</p>
                 </div>
-                <div>
-                <img src="/images/hireIcons/Dr31txG.png">
-                <h5>Cases Results</h5>
-                <p class="hireParagraphs">Our clients’ needs come first, and we are relentless in our defense of your constitutional rights.</p>
-                </div>
-                <div>
+                <div class="col-6 col-sm-4">
                 <img src="/images/hireIcons/g9bvhvL.png">
                 <h5>Experts In Law</h5>
                 <p class="hireParagraphs">We understand what you are up against and are here to fight for you.</p>
@@ -124,62 +130,104 @@
             <div class="clients">
               <h3 class="clientTitle">Clients Feedback</h3>
               <br>
-              <p class="clientParagraphContent"></p>
+              <p class="clientParagraphContent">Our Austin defense lawyers understand what’s at stake for those accused of crimes, which is why we attend to every detail and deliver the one-on-one attention our clients need. Learn more about our legal services by reading reviews from past clients.</p>
               <hr>
               <!-- Maybe use cards or flexbox for client reviews -->
-              <img><img><img>
+              <div class="clientTestimonials">
+              <div class="clientOne">
+                <img src="\images\testimonial\1.png">
+                <p class="clientTestimonialsParagraphs">“I feel that if it weren't for them I would have been heavily misguided and probably would not have made it through the system with the best possible outcome for me. 5 Stars for their service, generosity, and in making me feel like a top priority!”</p>
+                <h6>- Gene Martin</h6>
+                </div>
+                <div class="clientTwo">
+                  <img src="\images\testimonial\2.png">
+                  <p class="clientTestimonialsParagraphs">“I would love to add my thanks and heart felt appreciation for the help that your law firm provided me. Before I met you guys my situation looked very bleak and quite honestly your dedication to my case really carried over this past year and the reward was not only one felony dismissal but two.”</p>
+                  <h6>- Maya Jonson</h6>
+                  </div>
+                  <div class="clientThree">
+                    <img src="\images\testimonial\3.png">
+                    <p class="clientTestimonialsParagraphs">“Ended up going to trial for a DWI and got all 6 jurors to agree on a not guilty verdict. Highly recommended!! They will truly fight for you because they care for you.”</p>
+                    <h6>- Mark Smith</h6>
+                  </div>
+                    </div>
             </div>
 
             <div class="consultation">
 
-              <div class="consultationImage">
-                <img>
-              </div>
-
-              <div class="consultationContent">
-                <h3 class="consultationTitle">Free Consultation</h3>
-                <p class="consultationParagraphContent"></p>
+                <div class="consultationContent">
+                <div class="consultationForm">
+                  <h3 class="consultationTitle">Free Consultation</h3>
+                <p class="consultationParagraphContent">We Have Offices in Austin & Georgetown.</p>
                 <hr>
-
-                <form class="consultationForm">
-                  <input type="text" placeholder="Your Name" id="name" name="name">
-                  <input type="text" placeholder="Your email" id="email" name="email">
-                  <select id="practiceArea" name="practiceArea" aria-placeholder="Practice Area">
-                    <option value="" disabled selected>Practice Area</option>
-                    <option value="Criminal Law">Criminal Law</option>
-                    <option value="Domestic Violence">Domestic Violence</option>
-                    <option value="Family Law">Family Law</option>
-                    <option value="Drug Cases">Drug Cases</option>
-                    <option value="Theft">Theft</option>
-                    <option value="Technology Law">Technology Law</option>
-                  </select>
-
-                  <textarea name="message" id="message" rows="10" cols="30" placeholder="Your Message"></textarea>
-
-                  <input type="submit" value="Send Request" id="sendRequest">
+                <form>
+                  <div class="form-row g-3">
+                    <div class="form-group col-lg-6">
+                      <input type="text" class="form-control" id="inputYourName1" placeholder="Your Name">
+                    </div>
+                    <div class="form-group col-lg-6">
+                      <input type="text" class="form-control" id="InputEmail1" placeholder="Email">
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="form-group col-lg-12">
+                      <select id="inputState" class="form-control">
+                        <option selected>Practice Area</option>
+                        <option>Criminal Law</option>
+                        <option>Domestic Violence</option>
+                        <option>Family Law</option>
+                        <option>Drug Cases</option>
+                        <option>Theft</option>
+                        <option>Technology Law</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="form-group col-lg-12">
+                    <textarea  class="form-control" id="inputYourMessage" placeholder="Your Message" rows="4" cols="20"></textarea>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                  </div>
+                  <button type="submit" class="btn btn-warning sendRequest">SEND REQUEST</button>
                 </form>
               </div>
             </div>
-            
-            <div class="additionalInfo">
-              <div class="infoParagraph">
-                <p>The information on this website is for general information purposes only. Nothing on this site should be taken as legal advice for any individual case or situation. This information is not intended to create, and receipt or viewing does not constitute, an attorney-client relationship.</p>
-              </div>
-              <div class="blogPosts">
-                <img><p></p>
-                <img><p></p>
-                <img><p></p>
-              </div>
-              <div class="getInTouch">
-                <link rel="stylesheet" href="">
-                <p></p>
-                <link>
-              </div>
+                
+                <!-- <div class="consultationImageContainer"> -->
+                  <img class="consultationImage" src="images/background/bg-2.jpg">
+                <!-- </div> -->
             </div>
             
-            <footer>
-              <p>© 2021, All Rights Reserved.</p>
-            </footer>
+            <div class="additionalInfo container-md">
+              <div class="row additionalInfoContent">
+              <div class="infoParagraph col-sm-4">
+                <p>The information on this website is for general information purposes only. Nothing on this site should be taken as legal advice for any individual case or situation. This information is not intended to create, and receipt or viewing does not constitute, an attorney-client relationship.</p>
+              </div>
+              <div class="blogPosts col">
+                <h5 class="blogContact">Blog Posts</h5>
+                <img style="padding-bottom: 30px;" src="\images\blog\thumb\1.jpg"><span class="clearfix" style="padding-left: 15px;">Four ways to cheer yourself up on the Blue Monday!</span>
+                <img style="padding-bottom: 30px;" src="\images\blog\thumb\2.jpg"><span class="clearfix" style="padding-left: 15px;">Old cameras can capture images better than nowdays camera!</span>
+                <img style="padding-bottom: 30px;" src="\images\blog\thumb\3.jpg"><span style="padding-left: 15px;">Four ways to cheer yourself up on the Blue Monday!</span>
+              </div>
+              <div class="getInTouch col">
+                <h5 class="blogContact">Get In Touch</h5>
+                <p>
+                <a href="https://goo.gl/maps/qV9jxpJs21nj8vdk8" class="addressEmail"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                  <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                </svg> 1220 Wickersham, Austin TX 78741</a>
+                </p>
+                <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                </svg> (512) 570 1100</p>
+                <a href="mailto:needhelp@whofightsforyou.com" class="addressEmail"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                  <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z"/>
+                </svg> needhelp@whofightsforyou.com</a>
+              </div>
+              </div>
+              <footer>
+                <p>© 2021, All Rights Reserved.</p>
+              </footer>
+            </div>
 
 
 
