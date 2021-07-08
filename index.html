@@ -3,6 +3,8 @@
 <head>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,8 +12,8 @@
 </head>
 <body>
     <main>
-        <div class="header container-md">
-            <nav class="navbar navbar-light bg-light header">
+        <div class="header container-md" id="homeSection">
+            <nav class="navbar container-fluid navbar-light bg-light header">
                 <div class="container-fluid">
                   <a class="navbar-brand" href="#">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bank" viewBox="">
@@ -20,28 +22,28 @@
                     Who Fights for You?
                   </a>
                   <div class="btn-group" role="group" aria-label="Basic outlined example">
-                    <button type="button" class="btn btn-outline-light navbarButton">HOME</button>
-                    <button type="button" class="btn btn-outline-light navbarButton">ABOUT</button>
-                    <button type="button" class="btn btn-outline-light navbarButton">FEATURE</button>
-                    <button type="button" class="btn btn-outline-light navbarButton">TEAM</button>
-                    <button type="button" class="btn btn-outline-light navbarButton">WHY US</button>
-                    <button type="button" class="btn btn-outline-light navbarButton">FEEDBACK</button>
-                    <button type="button" class="btn btn-outline-light navbarButton">FREE CONSULTATION</button>
-                    <button type="button" class="btn btn-outline-light navbarButton">BLOG</button>
+                    <a href="/index.html"><button type="button" class="btn btn-outline-light navbarButton font-weight-bold">HOME</button></a>
+                    <a href="#aboutSection"><button type="button" class="btn btn-outline-light navbarButton font-weight-bold">ABOUT</button></a>
+                    <a href="#practiceSection"><button type="button" class="btn btn-outline-light navbarButton font-weight-bold">FEATURE</button></a>
+                    <a href="#expertSection"><button type="button" class="btn btn-outline-light navbarButton font-weight-bold">TEAM</button></a>
+                    <a href="#hireSection"><button type="button" class="btn btn-outline-light navbarButton font-weight-bold">WHY US</button></a>
+                    <a href="#clientSection"><button type="button" class="btn btn-outline-light navbarButton font-weight-bold">FEEDBACK</button></a>
+                    <a href="#consultationSection"><button type="button" class="btn btn-outline-light navbarButton font-weight-bold">FREE CONSULTATION</button></a>
+                    <button type="button" class="btn btn-outline-light navbarButton font-weight-bold">BLOG</button>
                   </div>
                 </div>
               </nav>
               <div class= "headerParagraph">
                   <h1 class ="headerParagraphTitle">Who Fights For You?</h1>
                   <p class="headerParagraphContent">Whether you have been charged with a minor misdemeanor or a serious federal crime, you need and deserve persistent, unyielding, and compassionate legal service from a skilled professional.</p>
-                      <button type="button" class="btn btn-outline-warning freeConsultation"> FREE CONSULTATION</button>
+                  <a href="#consultationSection"><button type="button" class="btn btn-outline-warning freeConsultation font-weight-bold"> FREE CONSULTATION</button></a>
               </div>
             </div>
               <div class="statBox">
-                <img class="statBoximg" src="/images/statBox.png">
+                <img class="statBoximg show-on-scroll" src="/images/statBox.png">
 
               </div>
-              <div class="about">
+              <div class="about" id="aboutSection">
                   <div class="aboutImage">
                       <img src="/images/team/team-4.png" alt="Man Standing with arms crossed">
                   </div>
@@ -55,17 +57,17 @@
 
               </div>
 
-              <div class="practice">
+              <div class="practice" id="practiceSection">
                   <h3 class="practiceTitle">Practice Areas</h3>
                 <br><br>
                 <p class="practiceParagraphContent">We have experience in a range of criminal defense case types. We’re prepared to handle your case.</p>
                 <hr class="practiceBreak">
                 <div class="practiceServices">
-                <img class="practiceServicesimg" src="/images/practiceIcons.png">
+                <img class="practiceServicesimg show-on-scroll" src="/images/practiceIcons.png">
             </div>
               </div>
               
-            <div class="expert">
+            <div class="expert" id="expertSection">
               <div class="expertContent">
               <h3 class="expertTitle">Expert Attorneys</h3>
               <br><br>
@@ -87,7 +89,7 @@
               </div>
             </div>
 
-            <div class="hire">
+            <div class="hire" id="hireSection">
 
                 <img class="hireImage" src="/images/background/bg-1.jpg">
               <!-- </div> -->
@@ -127,32 +129,32 @@
               </div>
             </div>
 
-            <div class="clients">
+            <div class="clients" id="clientSection">
               <h3 class="clientTitle">Clients Feedback</h3>
               <br>
               <p class="clientParagraphContent">Our Austin defense lawyers understand what’s at stake for those accused of crimes, which is why we attend to every detail and deliver the one-on-one attention our clients need. Learn more about our legal services by reading reviews from past clients.</p>
               <hr>
               <!-- Maybe use cards or flexbox for client reviews -->
               <div class="clientTestimonials">
-              <div class="clientOne">
+              <div class="clientOne show-on-scroll">
                 <img src="\images\testimonial\1.png">
-                <p class="clientTestimonialsParagraphs">“I feel that if it weren't for them I would have been heavily misguided and probably would not have made it through the system with the best possible outcome for me. 5 Stars for their service, generosity, and in making me feel like a top priority!”</p>
-                <h6>- Gene Martin</h6>
+                <p class="clientTestimonialsParagraphs font-italic font-weight-bold">“I feel that if it weren't for them I would have been heavily misguided and probably would not have made it through the system with the best possible outcome for me. 5 Stars for their service, generosity, and in making me feel like a top priority!”</p>
+                <h6 class= "font-weight-bold">- Gene Martin</h6>
                 </div>
-                <div class="clientTwo">
+                <div class="clientTwo show-on-scroll">
                   <img src="\images\testimonial\2.png">
-                  <p class="clientTestimonialsParagraphs">“I would love to add my thanks and heart felt appreciation for the help that your law firm provided me. Before I met you guys my situation looked very bleak and quite honestly your dedication to my case really carried over this past year and the reward was not only one felony dismissal but two.”</p>
-                  <h6>- Maya Jonson</h6>
+                  <p class="clientTestimonialsParagraphs font-italic font-weight-bold">“I would love to add my thanks and heart felt appreciation for the help that your law firm provided me. Before I met you guys my situation looked very bleak and quite honestly your dedication to my case really carried over this past year and the reward was not only one felony dismissal but two.”</p>
+                  <h6 class= "font-weight-bold">- Maya Jonson</h6>
                   </div>
-                  <div class="clientThree">
+                  <div class="clientThree show-on-scroll">
                     <img src="\images\testimonial\3.png">
-                    <p class="clientTestimonialsParagraphs">“Ended up going to trial for a DWI and got all 6 jurors to agree on a not guilty verdict. Highly recommended!! They will truly fight for you because they care for you.”</p>
-                    <h6>- Mark Smith</h6>
+                    <p class="clientTestimonialsParagraphs font-italic font-weight-bold">“Ended up going to trial for a DWI and got all 6 jurors to agree on a not guilty verdict. Highly recommended!! They will truly fight for you because they care for you.”</p>
+                    <h6 class= "font-weight-bold">- Mark Smith</h6>
                   </div>
                     </div>
             </div>
 
-            <div class="consultation">
+            <div class="consultation" id="consultationSection">
 
                 <div class="consultationContent">
                 <div class="consultationForm">
@@ -239,5 +241,6 @@
             <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
             <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+            <script src="\scripts.js"></script>
 </body>
 </html>

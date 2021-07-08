@@ -1,5 +1,6 @@
 body {
     overflow-x: hidden;
+    /* font-family: 'Arial, sans-serif'; */
 }
 
 .header {
@@ -16,7 +17,11 @@ body {
 .navbar {
     display: flex;
     flex-direction: row;
-    padding: 1% 15%;
+    padding: 1% 10%;
+    /* position: fixed; */
+}
+.btn-group {
+    font-family: 'Verdana, sans-serif';
 }
 .navbarButton {
     outline: none !important;
@@ -56,6 +61,10 @@ body {
     position: relative;
     margin-top: -60px;
     border-radius: 5px;
+}
+.statBoximg.is-visible {
+    animation: fadeInDown;
+    animation-duration: 2s;
 }
 .about {
     display:flex;
@@ -107,10 +116,16 @@ hr {
 .practiceServices {
     margin-right: 7%;
     padding-bottom: 100px;
-
+}
+.practiceServicesimg.is-visible {
+    animation: fadeInUp;
+    animation-duration: 2s;
 }
 .expert {
     background-color: rgb(249,249,249);
+}
+.expertTitle {
+    font-size: 2.5em;
 }
 .expertContent {
     padding-top: 5%;
@@ -148,6 +163,7 @@ hr {
 }
 .hireTitle {
     padding-bottom: 20px;
+    font-size: 2.5em;
 }
 .hireContent {
     display: flex;
@@ -180,6 +196,7 @@ hr {
 }
 .clientTitle {
     padding-top: 70px;
+    font-size: 2.5em;
     text-align: center;
 }
 .clientParagraphContent {
@@ -197,17 +214,29 @@ hr {
     align-items: center;
     width: 33%;
 }
+.clientOne.is-visible {
+    animation: fadeInUp;
+    animation-duration: 2s;
+}
 .clientTwo {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 33%;
 }
+.clientTwo.is-visible {
+    animation: fadeInUp;
+    animation-duration: 2s;
+}
 .clientThree {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 33%;
+}
+.clientThree.is-visible {
+    animation: fadeInUp;
+    animation-duration: 2s;
 }
 .clientTestimonialsParagraphs {
     margin: 2% 25%;
@@ -219,6 +248,7 @@ hr {
     flex-direction: row;
     align-items: center;
     background-color: rgb(249,249,249);
+    padding-top: 120px;
 }
 .consultationContent {
     display: flex;
@@ -283,4 +313,34 @@ footer {
     padding-top: 20px;
     padding-bottom: 10px;
     text-align: center;
+}
+
+@media (max-width: 576px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        overflow-x: auto;
+    }
+    .about {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+    .aboutParagraph {
+        margin: 0;
+    }
+    .aboutContent {
+        display: flex;
+        align-items: center;
+        max-width: 500px;
+    }
+    .practiceServicesimg {
+        max-width: 500px;
+    }
+
+
+
+
 }
