@@ -320,7 +320,8 @@ footer {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-        overflow-x: auto;
+        overflow-x: hidden;
+        max-width: 100%;
     }
     .about {
         display: flex;
