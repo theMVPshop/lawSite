@@ -323,6 +323,19 @@ footer {
         overflow-x: hidden;
         max-width: 100%;
     }
+    .navbarContent {
+        display: flex;
+        flex-direction: column;
+    }
+    .navbar {
+        display: flex;
+        flex-direction: column;
+    }
+    .btn-group {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
     .about {
         display: flex;
         flex-direction: column;
@@ -340,8 +353,20 @@ footer {
     .practiceServicesimg {
         max-width: 500px;
     }
+    .hireImage {
+        display: none;
+    }
+    .clientOne.is-visible {
+        animation: none;
+    }
 
+    .clientTwo.is-visible {
+        animation: none;
+    }
 
+    .clientThree.is-visible {
+        animation: none;
+    }
 
 
 }
