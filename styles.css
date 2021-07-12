@@ -321,7 +321,7 @@ footer {
         flex-direction: column;
         flex-wrap: wrap;
         overflow-x: hidden;
-        max-width: 100%;
+        max-width: auto;
     }
     .navbarContent {
         display: flex;
