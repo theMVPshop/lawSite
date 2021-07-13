@@ -257,10 +257,8 @@ hr {
     margin: none;
     padding-left: 40px;
     padding-right: 40px;
-    border: 1px solid blue;
 }
 .consultationImage {
-    border: 1px solid red;
     display:flex;
     width: 50%;
     height: auto;
