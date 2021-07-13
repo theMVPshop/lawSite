@@ -18,3 +18,12 @@ const callback = function(entries) {
   targets.forEach(function(target) {
     observer.observe(target);
   });
+
+  function myFunction() {
+    let x = document.getElementById("btn-group");
+    if (x.style.display === "flex") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "flex";
+    }
+  }

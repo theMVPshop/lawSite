@@ -310,6 +310,9 @@ footer {
     padding-bottom: 10px;
     text-align: center;
 }
+.icon {
+    display: none;
+}
 
 @media (max-width: 576px) {
     body {
@@ -365,6 +368,12 @@ footer {
     }
     form {
         width: auto;
+    }
+    .icon {
+        display: flex;
+    }
+    .btn-group {
+        display: none;
     }
 
 
