@@ -375,7 +375,10 @@ footer {
         display: none;
     }
     .header {
-        max-width: 1024px;
+        /* width: 1024px;
+        height: auto; */
+        /* background-size: 524px; */
+        background-position: 25% 75%;
     }
 
 
