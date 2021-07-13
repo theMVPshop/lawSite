@@ -4,8 +4,8 @@ body {
 }
 
 .header {
-    background-size: cover;
     background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(images/slider/slide-1.jpg);
+    background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
@@ -373,6 +373,9 @@ footer {
     }
     .btn-group {
         display: none;
+    }
+    .header {
+        max-width: 1024px;
     }
 
 
