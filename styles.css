@@ -52,7 +52,7 @@ body {
     margin-bottom: 30px;
 }
 .statBox {
-    min-width: 100%;
+    /* min-width: 100%; */
     display: flex;
     justify-content: center;
     background-color: rgb(249,249,249);
@@ -250,19 +250,17 @@ hr {
     background-color: rgb(249,249,249);
     padding-top: 120px;
 }
-.consultationContent {
-    display: flex;
-    flex-direction: row;
-}
+
 .consultationForm {
     display: flex;
     flex-direction: column;
-    min-width: 0;
-    width: 55vw;
+    margin: none;
     padding-left: 40px;
     padding-right: 40px;
+    border: 1px solid blue;
 }
 .consultationImage {
+    border: 1px solid red;
     display:flex;
     width: 50%;
     height: auto;
@@ -316,9 +314,6 @@ footer {
 }
 
 @media (max-width: 576px) {
-    html {
-        overflow-x: hidden;
-    }
     body {
         display: flex;
         flex-direction: column;
@@ -369,6 +364,9 @@ footer {
 
     .clientThree.is-visible {
         animation: none;
+    }
+    form {
+        width: auto;
     }
 
 
