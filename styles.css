@@ -9,15 +9,11 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
-    /* width: 100vw; */
-    /* height: 100vh; */
-    /* overflow-x:scroll */
 }
 .navbar {
     display: flex;
     flex-direction: row;
     padding: 1% 10%;
-    /* position: fixed; */
 }
 .btn-group {
     font-family: 'Verdana, sans-serif';
@@ -375,10 +371,10 @@ footer {
         display: none;
     }
     .header {
-        /* width: 1024px;
-        height: auto; */
-        /* background-size: 524px; */
         background-position: 25% 75%;
+        /* min-height: 100%; */
+        background-size: 100% 100%;
+        /* background-attachment: scroll; */
     }
 
 
