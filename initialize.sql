@@ -1,0 +1,26 @@
+DROP DATABASE IF EXISTS w02j72dn6gvq0apk;
+CREATE DATABASE IF NOT EXISTS w02j72dn6gvq0apk;
+
+use w02j72dn6gvq0apk;
+
+DROP TABLE IF EXISTS posts;
+CREATE TABLE IF NOT EXISTS posts (
+  post_id INT NOT NULL AUTO_INCREMENT,
+  title VARCHAR(100) NOT NULL,
+  entry_post VARCHAR(1000) NOT NULL,
+  entry_image VARCHAR(100) NOT NULL,
+  time_stamp TIMESTAMP,
+  PRIMARY KEY (post_id)
+);
+
+DROP TABLE IF EXISTS clients;
+CREATE TABLE IF NOT EXISTS clients (
+  client_id INT NOT NULL AUTO_INCREMENT,
+  client_name VARCHAR(100) NOT NULL,
+  client_email VARCHAR(100) NOT NULL,
+  practice_area VARCHAR(100) NOT NULL,
+  client_message VARCHAR(300) NOT NULL,
+  PRIMARY KEY (client_id)
+   
+);
+
