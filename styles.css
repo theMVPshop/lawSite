@@ -311,7 +311,7 @@ footer {
 
 @media (max-width: 576px) {
     body {
-        display: flex;
+        /* display: flex; */
         flex-direction: column;
         flex-wrap: wrap;
         overflow-x: hidden;
@@ -373,6 +373,10 @@ footer {
     .header {
         background-position: 25% 75%;
     }
+    .consultationImage {
+        display: none;
+    }
+    
 
 
 }
