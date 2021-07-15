@@ -2,8 +2,9 @@
   "name": "lawsite",
   "version": "1.0.0",
   "description": "Who Fights for You? HOMEABOUTFEATURETEAMWHY USFEEDBACKFREE CONSULTATIONBLOG",
-  "main": "scripts.js",
+  "main": "index.js",
   "dependencies": {
+    "body-parser": "^1.19.0",
     "bootstrap": "^5.0.2",
     "cors": "^2.8.5",
     "dotenv": "^10.0.0",
@@ -11,12 +12,12 @@
     "morgan": "^1.10.0",
     "mysql": "^2.18.1",
     "mysql-server": "^1.0.5",
-    "nodemon": "^2.0.12"
+    "nodemon": "^2.0.12",
+    "path": "^0.12.7"
   },
   "devDependencies": {},
   "scripts": {
-    "start": "nodemon index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
