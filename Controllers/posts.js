@@ -47,7 +47,7 @@ const createPosts = (req, res) => {
 
   pool.query(sql, (err, results) => {
     if (err) return handleSQLError(res, err);
-    return res.json({ post_id: results.insertId });
+    return res.json(req.body);
   });
 
 };
