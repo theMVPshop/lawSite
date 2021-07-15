@@ -1,0 +1,31 @@
+{
+  "name": "lawsite",
+  "version": "1.0.0",
+  "description": "Who Fights for You? HOMEABOUTFEATURETEAMWHY USFEEDBACKFREE CONSULTATIONBLOG",
+  "main": "scripts.js",
+  "dependencies": {
+    "bootstrap": "^5.0.2",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "morgan": "^1.10.0",
+    "mysql": "^2.18.1",
+    "mysql-server": "^1.0.5",
+    "nodemon": "^2.0.12"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/theMVPshop/lawSite.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/theMVPshop/lawSite/issues"
+  },
+  "homepage": "https://github.com/theMVPshop/lawSite#readme"
+}
