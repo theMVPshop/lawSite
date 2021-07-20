@@ -1,116 +1,117 @@
 body {
-    overflow-x: hidden;
-    /* font-family: 'Arial, sans-serif'; */
+	overflow-x: hidden;
+	/* font-family: 'Arial, sans-serif'; */
 }
 
 .header {
-    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(images/slider/slide-1.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+		url(images/slider/slide-1.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
 }
 .navbar {
-    display: flex;
-    flex-direction: row;
-    padding: 1% 10%;
+	display: flex;
+	flex-direction: row;
+	padding: 1% 10%;
 }
 .btn-group {
-    font-family: 'Verdana, sans-serif';
+	font-family: "Verdana, sans-serif";
 }
 .navbarButton {
-    outline: none !important;
-    border-width: 0;
-  }
+	outline: none !important;
+	border-width: 0;
+}
 .bi {
-    margin-bottom: 6px;
+	margin-bottom: 6px;
 }
 .headerParagraph {
-    padding-top: 100px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-bottom: 60px;
+	padding-top: 100px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-bottom: 60px;
 }
 .headerParagraphTitle {
-    color: white;
-    padding-bottom: 20px;
-    font-size: 3.5em;
+	color: white;
+	padding-bottom: 20px;
+	font-size: 3.5em;
 }
 .headerParagraphContent {
-    color: white;
-    margin: auto 37%;
-    text-align: center;
-    padding-bottom: 30px;
+	color: white;
+	margin: auto 37%;
+	text-align: center;
+	padding-bottom: 30px;
 }
 .freeConsultation {
-    margin-bottom: 30px;
+	margin-bottom: 30px;
 }
 .statBox {
-    /* min-width: 100%; */
-    display: flex;
-    justify-content: center;
-    background-color: rgb(249,249,249);
+	/* min-width: 100%; */
+	display: flex;
+	justify-content: center;
+	background-color: rgb(249, 249, 249);
 }
 .statBoximg {
-    position: relative;
-    margin-top: -60px;
-    border-radius: 5px;
+	position: relative;
+	margin-top: -60px;
+	border-radius: 5px;
 }
 .statBoximg.is-visible {
-    animation: fadeInDown;
-    animation-duration: 2s;
+	animation: fadeInDown;
+	animation-duration: 2s;
 }
 .about {
-    display:flex;
-    align-items: center;
-    background-color: rgb(249,249,249);
+	display: flex;
+	align-items: center;
+	background-color: rgb(249, 249, 249);
 }
 .aboutImage {
-    margin: auto 10%;
+	margin: auto 10%;
 }
 .aboutContent {
-    margin: auto 5%;
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
+	margin: auto 5%;
+	display: flex;
+	flex-direction: column;
+	justify-content: left;
 }
 .aboutTitle {
-    font-size: 2.5em;
+	font-size: 2.5em;
 }
 hr {
-    width: 7%;
-    background-color: rgb(221,178,125);
-    margin: 4% 0%;
+	width: 7%;
+	background-color: rgb(221, 178, 125);
+	margin: 4% 0%;
 }
 .aboutParagraph {
-    color: darkgray;
-    margin-right: 45%;
+	color: darkgray;
+	margin-right: 45%;
 }
 .aboutSignature {
-    max-width: 10%;
+	max-width: 10%;
 }
 .practice {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 5%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 5%;
 }
 .practiceTitle {
-    font-size: 2.5em;
+	font-size: 2.5em;
 }
 .practiceParagraphContent {
-    color: darkgrey;
-    margin: auto 33%;
-    margin-bottom: -2%;
-    text-align: center;
+	color: darkgrey;
+	margin: auto 33%;
+	margin-bottom: -2%;
+	text-align: center;
 }
 .practiceBreak {
-    width: 3%;
+	width: 3%;
 }
 .practiceServices {
-    margin-right: 7%;
-    padding-bottom: 100px;
+	margin-right: 7%;
+	padding-bottom: 100px;
 }
 .practiceServiceItems {
     display: flex;
@@ -129,196 +130,210 @@ hr {
     animation-duration: 2s;
 } */
 .expert {
-    background-color: rgb(249,249,249);
+	background-color: rgb(249, 249, 249);
 }
 .expertTitle {
-    font-size: 2.5em;
+	font-size: 2.5em;
 }
 .expertContent {
-    padding-top: 5%;
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
+	padding-top: 5%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
-.expertParagraphContent{
-    text-align: center;
-    margin: auto 33%;
-    margin-bottom: -2%;
-    color: darkgrey;
+.expertParagraphContent {
+	text-align: center;
+	margin: auto 33%;
+	margin-bottom: -2%;
+	color: darkgrey;
 }
-.expertTeam{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+.expertTeam {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
 }
 .expertName {
-    padding-top: 10px;
+	padding-top: 10px;
 }
 .expertMark {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 .expertRyanPrintz {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 .hire {
-    display: flex;
-    flex-direction: row;
+	display: flex;
+	flex-direction: row;
 }
 .hireTitle {
-    padding-bottom: 20px;
-    font-size: 2.5em;
+	padding-bottom: 20px;
+	font-size: 2.5em;
 }
 .hireContent {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    margin-top: 80px;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	margin-top: 80px;
 }
 .hireImage {
-    margin-left: -180px;
-    width: 60%;
-    height: auto;
+	margin-left: -180px;
+	width: 60%;
+	height: auto;
 }
 .hireAreas {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: left;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-items: left;
 }
 .hireParagraphs {
-    color: darkgrey;
-    text-align: left;
+	color: darkgrey;
+	text-align: left;
 }
 .clients {
-    margin-top: 30px;
-    display: flex;
-    background-color: rgb(249,249,249);
-    align-items: center;
-    flex-direction: column;
+	margin-top: 30px;
+	display: flex;
+	background-color: rgb(249, 249, 249);
+	align-items: center;
+	flex-direction: column;
 }
 .clientTitle {
-    padding-top: 70px;
-    font-size: 2.5em;
-    text-align: center;
+	padding-top: 70px;
+	font-size: 2.5em;
+	text-align: center;
 }
 .clientParagraphContent {
-    text-align: center;
-    margin: auto 33%;
-    color: darkgrey;
+	text-align: center;
+	margin: auto 33%;
+	color: darkgrey;
 }
 .clientTestimonials {
-    display: flex;
-    flex-direction: row;
+	display: flex;
+	flex-direction: row;
 }
 .clientOne {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 33%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 33%;
 }
 .clientOne.is-visible {
-    animation: fadeInUp;
-    animation-duration: 2s;
+	animation: fadeInUp;
+	animation-duration: 2s;
 }
 .clientTwo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 33%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 33%;
 }
 .clientTwo.is-visible {
-    animation: fadeInUp;
-    animation-duration: 2s;
+	animation: fadeInUp;
+	animation-duration: 2s;
 }
 .clientThree {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 33%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 33%;
 }
 .clientThree.is-visible {
-    animation: fadeInUp;
-    animation-duration: 2s;
+	animation: fadeInUp;
+	animation-duration: 2s;
 }
 .clientTestimonialsParagraphs {
-    margin: 2% 25%;
-    color: darkgrey;
-    text-align: center;
+	margin: 2% 25%;
+	color: darkgrey;
+	text-align: center;
 }
 .consultation {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    background-color: rgb(249,249,249);
-    padding-top: 120px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	background-color: rgb(249, 249, 249);
+	padding-top: 120px;
 }
 
+.consultationBlog {
+	display: inline;
+	flex-direction: none;
+}
 .consultationForm {
-    display: flex;
-    flex-direction: column;
-    margin: none;
-    padding-left: 40px;
-    padding-right: 40px;
+	display: flex;
+	flex-direction: column;
+	margin: none;
+	padding-left: 40px;
+	padding-right: 40px;
+}
+
+.consultationFormBlog {
+	padding-left: 30%;
+	padding-right: 30%;
+	padding-top: 120px;
 }
 .consultationImage {
-    display:flex;
-    width: 50%;
-    height: auto;
-    margin-right: 0;
-    margin-left: auto;
+	display: flex;
+	width: 50%;
+	height: auto;
+	margin-right: 0;
+	margin-left: auto;
 }
 .sendRequest {
-    background-color: rgb(216,174,119);
-    border-color: rgb(216,174,119);
-    color: white;
-    padding: 12px 30px;
+	background-color: rgb(216, 174, 119);
+	border-color: rgb(216, 174, 119);
+	color: white;
+	padding: 12px 30px;
 }
 .form-control {
-    background-color: rgb(245,245,245);
-    border: none;
+	background-color: rgb(245, 245, 245);
+	border: none;
+}
+
+.form-controlText {
+	height: 500px;
 }
 .additionalInfo {
-    padding-top: 100px;;
-    background-color: rgb(54,54,54);
-    color: rgb(189,189,189);
+	padding-top: 100px;
+	background-color: rgb(54, 54, 54);
+	color: rgb(189, 189, 189);
 }
-.additionalInfoContent{
-    padding-bottom: 80px;
+.additionalInfoContent {
+	padding-bottom: 80px;
 }
-.infoParagraph{
-    text-align: left;
-    padding-left: 10%;
+.infoParagraph {
+	text-align: left;
+	padding-left: 10%;
 }
 .addressEmail {
-    color: darkgrey;
+	color: darkgrey;
 }
 .bi-geo-alt-fill {
-    color: rgb(216,174,119);
+	color: rgb(216, 174, 119);
 }
-.bi-telephone-fill{
-    color: rgb(216,174,119);
+.bi-telephone-fill {
+	color: rgb(216, 174, 119);
 }
 .blogContact {
-    color: white;
-    padding-bottom: 5%;
+	color: white;
+	padding-bottom: 5%;
 }
 .bi-envelope {
-    color: rgb(216,174,119);
+	color: rgb(216, 174, 119);
 }
 footer {
-    background-color: rgb(39,39,39);
-    color: rgb(129,129,129);
-    padding-top: 20px;
-    padding-bottom: 10px;
-    text-align: center;
+	background-color: rgb(39, 39, 39);
+	color: rgb(129, 129, 129);
+	padding-top: 20px;
+	padding-bottom: 10px;
+	text-align: center;
 }
 .icon {
-    display: none;
+	display: none;
 }
 
 @media (max-width: 950px) {
@@ -383,9 +398,37 @@ footer {
         animation: none;
     }
 
-    .clientTwo.is-visible {
-        animation: none;
-    }
+	.navbar-custom {
+		background-color: rgb(216, 174, 119);
+	}
+	.btn-group {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.about {
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		justify-content: center;
+	}
+	.aboutParagraph {
+		margin: 0;
+	}
+	.aboutContent {
+		display: flex;
+		align-items: center;
+		max-width: 500px;
+	}
+	.practiceServicesimg {
+		max-width: 500px;
+	}
+	.hireImage {
+		display: none;
+	}
+	.clientOne.is-visible {
+		animation: none;
+	}
 
     .clientThree.is-visible {
         animation: none;
@@ -415,5 +458,22 @@ footer {
     }
     
 
-
+	.clientThree.is-visible {
+		animation: none;
+	}
+	form {
+		width: auto;
+	}
+	.icon {
+		display: flex;
+	}
+	.btn-group {
+		display: none;
+	}
+	.header {
+		background-position: 25% 75%;
+	}
+	.consultationImage {
+		display: none;
+	}
 }
