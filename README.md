@@ -1,7 +1,7 @@
 # lawSite
 
  Who Fights for You?
-HOME ABOUT FEATURE TEAM WHY US FEEDBACK FREE CONSULTATION BLOG 
+HOMEABOUTFEATURETEAMWHY USFEEDBACKFREE CONSULTATIONBLOG
 
 Who Fights For You?
 Whether you have been charged with a minor misdemeanor or a serious federal crime, you need and deserve persistent, unyielding, and compassionate legal service from a skilled professional.
