@@ -46,21 +46,36 @@ body {
 .freeConsultation {
     margin-bottom: 30px;
 }
-.statBox {
-    /* min-width: 100%; */
+.statBoxItems {
     display: flex;
+    /* flex-direction: row; */
     justify-content: center;
+    /* position: relative; */
     background-color: rgb(249,249,249);
 }
-.statBoximg {
-    position: relative;
-    margin-top: -60px;
-    border-radius: 5px;
-}
-.statBoximg.is-visible {
+/* .statBoxItems.is-visible {
     animation: fadeInDown;
     animation-duration: 2s;
+} */
+.statBoxContent {
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+    background-color: white;
+    height: auto;
+    /* left: 30%; */
+    margin-top: -4%;
+    padding: 0 3%;
 }
+.statTitle {
+    margin-top: 35%;
+}
+/* .statText {
+    display: flex;
+    flex-direction: column;
+} */
 .about {
     display:flex;
     align-items: center;
@@ -109,25 +124,22 @@ hr {
     width: 3%;
 }
 .practiceServices {
-    margin-right: 7%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
     padding-bottom: 100px;
 }
 .practiceServiceItems {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: 1px solid red;
-    justify-content: space-between;
-}
-.practiceServiceContent {
-    display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
 }
-/* .practiceServicesimg.is-visible {
-    animation: fadeInUp;
+.practiceServiceItems.is-visible {
+    animation: fadeInDown;
     animation-duration: 2s;
-} */
+}
 .expert {
     background-color: rgb(249,249,249);
 }
@@ -412,6 +424,11 @@ footer {
     
     .getInTouch {
         padding-top: 20px;
+    }
+    .statBoxContent {
+        flex-wrap: wrap;
+        padding: 0 10%;
+        /* flex-direction: column; */
     }
     
 
