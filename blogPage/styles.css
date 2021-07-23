@@ -1,0 +1,125 @@
+
+.header {
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../images/page-title/1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    background-position: center;
+}
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.btn-group {
+    font-family: 'Verdana, sans-serif';
+}
+.navbarButton {
+    outline: none !important;
+    border-width: 0;
+  }
+.headerParagraph {
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 60px;
+}
+.headerParagraphTitle {
+    color: white;
+    padding-bottom: 20px;
+    font-size: 3.5em;
+    font-weight: 400;
+}
+.breadcrumb {
+    background: none;
+}
+.blog {
+    display: flex;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 5%;
+    justify-content: center;
+    /* margin: 0 auto; */
+    /* padding-left: 7%; */
+}
+.blogPost {
+    width: 60%;
+    margin: auto;
+    padding-bottom: 3%;
+}
+.blogImages {
+    display: block;
+    margin: auto;
+    width: 70%;
+  }
+.blogTitle {
+      width: 70%;
+      margin: auto;
+      padding-bottom: 2%;
+  }
+h6 {
+      width: 70%;
+      margin: auto;
+  }
+.page-link {
+    color: black;
+}
+.additionalInfo {
+    padding-top: 100px;;
+    background-color: rgb(54,54,54);
+    color: rgb(189,189,189);
+}
+.additionalInfoContent{
+    padding-bottom: 80px;
+}
+.infoParagraph{
+    text-align: left;
+    padding-left: 10%;
+    padding-right: 5%;
+}
+.addressEmail {
+    color: darkgrey;
+}
+.bi-geo-alt-fill {
+    color: rgb(216,174,119);
+}
+.bi-telephone-fill{
+    color: rgb(216,174,119);
+}
+.blogContact {
+    color: white;
+    padding-bottom: 5%;
+}
+.bi-envelope {
+    color: rgb(216,174,119);
+}
+footer {
+    background-color: rgb(39,39,39);
+    color: rgb(129,129,129);
+    padding-top: 20px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+
+
+@media (max-width: 950px) {
+.blog {
+    display: flex;
+    flex-direction: column;
+}
+.additionalInfoContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.infoParagraph {
+    align-items: center;
+    width: 100%;
+}
+.headerParagraphTitle {
+    font-size: xx-large;
+}
+
+}
