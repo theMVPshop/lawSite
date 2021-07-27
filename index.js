@@ -10,8 +10,8 @@ const postsRouter = require("./Routers/posts");
 const clientsRouter = require("./Routers/clients");
 
 const app = express();
-// const port = process.env.PORT || 8080;
-const port = 8080;
+// const port = process.env.PORT || 3000;
+// const port = 3000;
 
 app.use(express.static('public'));
 app.use(morgan('dev'));
