@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <h1>Blog</h1>
+  <div id='blogs'></div>
+</body>
+<script>
+
+  function createNode(element) {
+    return document.createElement(element);
+}
+
+function append(parent, el) {
+  return parent.appendChild(el);
+}
+
+  const ul = document.getElementById('blogs');
+  fetch('./posts/')
+    .then(
+      function(response){
+        console.log( "first response ", response);
+        if(response.status !== 200){
+          console.log('Looks like there was a problem. Status Code: ' + response.status );
+          return;
+        }
+
+        response.json().then(function(data) {
+          console.log("data ", data);
+          // let blog = data.results;
+    
+ 
+          return data.map(function(blog) {
+  
+          let li = createNode('li');
+          let img = createNode('img');  
+          let span = createNode('span');
+
+
+          img.src = `./standard/${blog.entry_image}`
+          span.innerHTML = ` ${blog.time_stamp}  ${blog.title}`;
+          append(li, img);
+          append(li, span);
+          append(ul, li);
+           })
+        });
+
+      }
+    )
+
+    .catch(function(err) {
+      console.log('Fetch Error :-S', err);
+    });
+
+
+</script>
+</html>
+
