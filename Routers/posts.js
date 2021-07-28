@@ -5,7 +5,7 @@ const router = express.Router();
 
 router.post("/", postsControllers.createPosts);
 
-router.get("/getAll", postsControllers.getAllPosts);
+router.get("/getAllPosts", postsControllers.getAllPosts);
 
 router.get("/date/:startdate/:enddate", postsControllers.getPostsByDate);
 
