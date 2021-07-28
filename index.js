@@ -10,9 +10,9 @@ const bodyParser = require('body-parser');
 // const clientsRouter = require("./Routers/clients");
 
 const app = express();
-// const port = process.env.PORT || 8080;
-const port = 3306;
-console.log(`My App listening on port ${port}!`);
+const port = process.env.PORT || 8080;
+// const port = 3306;
+
 
 app.use(express.static('public'));
 

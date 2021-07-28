@@ -1,7 +1,7 @@
 const express = require("express");
+const router = express.Router();
 const clientsControllers = require("../Controllers/clients");
 
-const router = express.Router();
 
 router.post("/", clientsControllers.createClients);
 
