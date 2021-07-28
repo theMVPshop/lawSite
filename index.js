@@ -22,9 +22,9 @@ app.use(bodyParser.json());
 app.use("/posts", postsRouter);
 app.use("/clients", clientsRouter);
 
-// app.get("/", (req, res) => {
-//   res.send("Welcome!");
-// });
+app.get("/", (req, res) => {
+  res.send("Welcome!");
+});
 
 // app.post("/api/posts", (req, res) =>{
  
