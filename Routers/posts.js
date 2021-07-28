@@ -1,17 +1,17 @@
 const express = require("express");
-const postsControllers = require("../Controllers/posts");
-
 const router = express.Router();
+const posts = require("../Controllers/posts");
 
-router.post("/", postsControllers.createPosts);
 
-router.get("/getAllPosts", postsControllers.getAllPosts);
+router.post("/", posts.createPosts);
 
-router.get("/date/:startdate/:enddate", postsControllers.getPostsByDate);
+router.get("/getAll", posts.getAllPosts);
 
-router.put("/:id", postsControllers.updatePostId);
+router.get("/date/:startdate/:enddate", posts.getPostsByDate);
 
-router.delete("/:id", postsControllers.deletePostById);
+router.put("/:id", posts.updatePostId);
+
+router.delete("/:id", posts.deletePostById);
 
 
 
