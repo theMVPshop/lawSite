@@ -10,7 +10,7 @@ const db = require('./sql/connect');
 // const clientsRouter = require("./Routers/clients");
 
 const app = express();
-const port = process.env.PORT;
+const port = process.env.PORT || 80;
 console.log("process.env.port ", port)
 
 
