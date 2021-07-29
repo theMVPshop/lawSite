@@ -10,8 +10,13 @@ const db = require('./sql/connect');
 // const clientsRouter = require("./Routers/clients");
 
 const app = express();
+<<<<<<< HEAD
 const port = process.env.PORT || 80;
 console.log("process.env.port ", port)
+=======
+const port = process.env.PORT || 8080;
+// const port = 3306;
+>>>>>>> parent of 6cfad8a (updated port console logs)
 
 
 app.use(express.static('public'));
