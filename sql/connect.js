@@ -6,8 +6,6 @@ class Connection {
       console.log("creating connection...");
       this.pool = mysql.createPool({
         connectionLimit: 100,
-        // host: "127.0.0.1",
-        // user: "root",
         host: process.env.HOST,
         port: process.env.PORT,
         user: process.env.USERNAME,
@@ -16,11 +14,14 @@ class Connection {
       });
 
       return this.pool;
-    }
-
+      
+    } 
+    console.log("port in connection ", port);
+    
     return this.pool;
   }
 }
+
 
 const instance = new Connection();
 
