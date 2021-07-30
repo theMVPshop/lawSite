@@ -35,5 +35,5 @@ app.use('/posts', require('./Routers/posts'));
 // })
 const port = process.env.PORT || 5000;
 app.listen(port, () =>
-console.log(`[⚡️ server] app is listening on port ${PORT}`)
+console.log(`[⚡️ server] app is listening on port ${port}`)
 );
