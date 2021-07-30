@@ -1,10 +1,10 @@
 require('dotenv').config();
+const db = require('./sql/connect');
 const express = require('express');
 // const path = require('path');
 // const cors = require('cors');
 // const morgan = require('morgan');
 // const bodyParser = require('body-parser');
-const db = require('./sql/connect');
 
 // const postsRouter = require("./Routers/posts");
 // const clientsRouter = require("./Routers/clients");

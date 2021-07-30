@@ -3,7 +3,7 @@ const router = express.Router();
 const posts = require("../Controllers/posts");
 
 
-router.post("/", posts.createPosts);
+// router.post("/", posts.createPosts);
 
 router.get("/getAll", posts.getAllPosts);
 
