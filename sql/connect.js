@@ -7,13 +7,15 @@ class Connection {
       console.log("creating connection...");
       this.pool = mysql.createPool({
         connectionLimit: 100,
-        // host: "127.0.0.1",
-        // user: "root",
         host: process.env.HOST,
         port: process.env.PORT,
         user: process.env.USERNAME,
         password: process.env.PASSWORD,
         database: process.env.DATABASE,
+        connectionLimit : 1000,
+        connectTimeout  : 60 * 60 * 1000,
+        acquireTimeout  : 60 * 60 * 1000,
+        timeout         : 60 * 60 * 1000,
       });
 
       return this.pool;

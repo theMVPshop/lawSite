@@ -8,6 +8,7 @@ const getAllPosts = (req, res) => {
   pool.query("SELECT * FROM posts", (err, rows) => {
     console.log("It's here!");
     if (err) return handleSQLError(res, err);
+    console.log("rows", rows);
     return res.json(rows);
   });
 };
