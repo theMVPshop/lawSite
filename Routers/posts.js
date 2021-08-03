@@ -7,11 +7,11 @@ const posts = require("../Controllers/posts");
 
 router.get("/getAll", posts.getAllPosts);
 
-router.get("/date/:startdate/:enddate", posts.getPostsByDate);
+// router.get("/date/:startdate/:enddate", posts.getPostsByDate);
 
-router.put("/:id", posts.updatePostId);
+// router.put("/:id", posts.updatePostId);
 
-router.delete("/:id", posts.deletePostById);
+// router.delete("/:id", posts.deletePostById);
 
 
 
