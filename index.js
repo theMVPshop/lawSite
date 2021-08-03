@@ -23,7 +23,7 @@ const app = express();
 // app.use("/posts", postsRouter);
 // app.use("/clients", clientsRouter);
 app.use(express.json());
-app.get("/", (req, res) => {res.send("Welcome!");});
+// app.get("/", (req, res) => {res.send("Welcome!");});
 app.use('/posts', require('./Routers/posts'));
 
 // app.use('./clients', require('./Routers/clients'));
