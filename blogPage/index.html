@@ -29,53 +29,7 @@
         </div>
         </div>
         <div class="blog container-fluid row" id="blogSection">
-            <div class="blogPost col">
-                <img class="blogImages" src="../images/blog/standard/1.jpg">
-                <p class="blogTitle"><small class="text-muted">Jan 20, 2017</small></p>
-                <h6>10 things to know for tax practice in USA for companies</h6>
-            </div>
-            <div class="blogPost col">
-                <img class="blogImages" src="../images/blog/standard/2.jpg">
-                <p class="blogTitle"><small class="text-muted">Jan 20, 2017</small></p>
-                <h6>The incredible growing presidential legal team how to?</h6>
-            </div>
-            <div class="blogPost col">
-                <img class="blogImages" src="../images/blog/standard/3.jpg">
-                <p class="blogTitle"><small class="text-muted">Jan 20, 2017</small></p>
-                <h6>So what can law firms do? 19 things you will learn</h6>
-            </div>
-            <div class="w-100"></div>
-            <div class="blogPost col">
-                <img class="blogImages" src="../images/blog/standard/4.jpg">
-                <p class="blogTitle"><small class="text-muted">Jan 20, 2017</small></p>
-                <h6>3 things law firms must understand to increase gender diversity</h6>
-            </div>
-            <div class="blogPost col">
-                <img class="blogImages" src="../images/blog/standard/5.jpg">
-                <p class="blogTitle"><small class="text-muted">Jan 20, 2017</small></p>
-                <h6>10 things to know about entertainment law</h6>
-            </div>
-            <div class="blogPost col">
-                <img class="blogImages" src="../images/blog/standard/6.jpg">
-                <p class="blogTitle"><small class="text-muted">Jan 20, 2017</small></p>
-                <h6>What stops lawyers from using Macs at work</h6>
-            </div>
-            <div class="w-100"></div>
-            <div class="blogPost col">
-                <img class="blogImages" src="../images/blog/standard/7.jpg">
-                <p class="blogTitle"><small class="text-muted">Jan 20, 2017</small></p>
-                <h6>An important footnote in the history of legal education</h6>
-            </div>
-            <div class="blogPost col">
-                <img class="blogImages" src="../images/blog/standard/8.jpg">
-                <p class="blogTitle"><small class="text-muted">Jan 20, 2017</small></p>
-                <h6>Lawyers as leaders: is your personality too legal?</h6>
-            </div>
-            <div class="blogPost col">
-                <img class="blogImages" src="../images/blog/standard/9.jpg">
-                <p class="blogTitle"><small class="text-muted">Jan 20, 2017</small></p>
-                <h6>Never fire a potential key witness before trial</h6>
-            </div>
+            
         </div>
 
         <div class="additionalInfo container-fluid" id="contact">
@@ -108,6 +62,7 @@
           <footer class="container-fluid">
             <p>© 2021, All Rights Reserved.</p>
           </footer>
+          
     </main>
     
 
@@ -126,6 +81,71 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <script>
+      let blogs = document.querySelectorAll("#blogSection")
+      function createNode(element) {
+        return document.createElement(element);
+    }
+    
+    function append(parent, el) {
+      return parent.appendChild(el);
+    }
+    
+      const ul = document.getElementById('blogs');
+      fetch('https://legal-mvp.herokuapp.com/posts/getAll/')
+        .then(
+          function(response){
+            console.log( "first response ", response);
+            if(response.status !== 200){
+              console.log('Looks like there was a problem. Status Code: ' + response.status );
+              return;
+            }
+    
+            response.json().then(function(data) {
+              console.log("data ", data);
+              // let blog = data.results;
+        
+     
+              return data.map(function(blog) {
+      
+              // let div = createNode('li');
+              // let img = createNode('img');  
+              // let span = createNode('span');
+    
+    
+              img.src = `./standard/${blog.entry_image}`
+              // span.innerHTML = ` ${blog.time_stamp}  ${blog.title}`;
+              // append(li, img);
+              // append(li, span);
+              // append(ul, li);
+              let html = `<div class="blogPost col"><img class="blogImages" src="${img.src}"><p class="blogTitle"><small class="text-muted">${blog.time_stamp}</small></p><h6>${blog.title}</h6></div>`
+              blogs.appendChild(html);
+
+
+
+               })
+            });
+    
+          }
+        )
+    
+        .catch(function(err) {
+          console.log('Fetch Error :-S', err);
+        });
+    
+    
+    </script>
 </body>
 
 </html>
+
+
+
+
+<!-- <div class="blogPost col">
+  <img class="blogImages" src="../images/blog/standard/1.jpg">
+  <p class="blogTitle"><small class="text-muted">Jan 20, 2017</small></p>
+  <h6>10 things to know for tax practice in USA for companies</h6>
+</div> -->
+
