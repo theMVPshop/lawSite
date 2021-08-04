@@ -93,7 +93,7 @@
     }
     
       const ul = document.getElementById('blogs');
-      fetch('./posts/getAll')
+      fetch('../posts/getAll')
         .then(
           function(response){
             console.log( "first response ", response);
@@ -121,7 +121,7 @@
               // append(ul, li);
               let html = `<div class="blogPost col"><img class="blogImages" src="${img.src}"><p class="blogTitle"><small class="text-muted">${blog.time_stamp}</small></p><h6>${blog.title}</h6></div>`
               blogs.appendChild(html);
-              
+
 
 
                })
