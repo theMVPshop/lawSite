@@ -22,7 +22,7 @@ function append(parent, el) {
 }
 
   const ul = document.getElementById('blogs');
-  fetch('./posts/')
+  fetch('./posts/getAll')
     .then(
       function(response){
         console.log( "first response ", response);
