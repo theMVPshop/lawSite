@@ -93,7 +93,7 @@
     }
     
       const ul = document.getElementById('blogs');
-      fetch('../posts/getAll')
+      fetch('https://legal-mvp.herokuapp.com/posts/getAll/')
         .then(
           function(response){
             console.log( "first response ", response);
