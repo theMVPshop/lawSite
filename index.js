@@ -2,7 +2,7 @@ require('dotenv').config();
 const db = require('./sql/connect');
 const express = require('express');
 // const path = require('path');
-// const cors = require('cors');
+const cors = require('cors');
 // const morgan = require('morgan');
 // const bodyParser = require('body-parser');
 
@@ -16,7 +16,7 @@ const app = express();
 // app.use(express.static('public'));
 
 // app.use(morgan('dev'));
-// app.use(cors());
+app.use(cors());
 // app.use(bodyParser.urlencoded({ extended: false}));
 // app.use(bodyParser.json());
 
